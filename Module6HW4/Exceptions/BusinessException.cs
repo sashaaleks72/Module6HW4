@@ -6,9 +6,8 @@ namespace Module6HW4.Exceptions
     {
         public string ErrorMessage { get; set; }
 
-        public BusinessException(string errorMessage) : base()
+        public BusinessException(string errorMessage) : base(errorMessage)
         {
-            ErrorMessage = errorMessage;
         }
     }
 }
