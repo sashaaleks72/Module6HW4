@@ -29,7 +29,7 @@ namespace Module6HW4.Controllers
             }
             catch (BusinessException ex)
             {
-                return NotFound(new { ex.ErrorMessage });
+                return NotFound(new { ex.Message });
             }
 
             return View(teapots);
@@ -45,7 +45,7 @@ namespace Module6HW4.Controllers
             }
             catch (BusinessException ex)
             {
-                return NotFound(new { ex.ErrorMessage });
+                return NotFound(new { ex.Message });
             }
 
             return View(teapot);
@@ -75,7 +75,7 @@ namespace Module6HW4.Controllers
             }
             catch (BusinessException ex)
             {
-                return NotFound(new { ex.ErrorMessage });
+                return NotFound(new { ex.Message });
             }
 
             return View(teapot);
@@ -102,7 +102,7 @@ namespace Module6HW4.Controllers
             }
             catch (BusinessException ex)
             {
-                return NotFound(new { ex.ErrorMessage });
+                return NotFound(new { ex.Message });
             }
 
             return RedirectToAction("GetTeapots");
@@ -116,7 +116,7 @@ namespace Module6HW4.Controllers
             }
             catch (BusinessException ex)
             {
-                return NotFound(new { ex.ErrorMessage });
+                return NotFound(new { ex.Message });
             }
 
             return RedirectToAction("GetTeapots");
